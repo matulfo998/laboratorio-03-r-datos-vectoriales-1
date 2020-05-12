@@ -163,6 +163,6 @@ plot(centro_america["lifeExp"], main="Expectativa de Vida en Centroamerica por P
 ### Ejercicio 8 (25%)
 Extraiga en un nuevo data frame los países de Centroamérica con esperanza de vida mayor o igual a 74 años y genere el mapa de coropletas, con su título correspondiente.
 ```{r}
-centroamerica_muestra <- centro_america[1:3, 9]
+centroamerica_muestra <- centro_america[centro_america$lifeExp>=74,]
 plot(centroamerica_muestra["lifeExp"], main="Países de CA con Esperanza de Vida Mayor o Igual a 74 años")
 ```
